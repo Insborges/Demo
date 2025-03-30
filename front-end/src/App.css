@@ -1,0 +1,80 @@
+/* Estiliza os itens da lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+}
+
+/* Agrupar nome e email */
+.user-info {
+  display: flex;
+  gap: 10px; /* Espaço entre o nome e o email */
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilizar as caixas de texto */
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Exibir nome e e-mail na mesma linha com um espaço menor */
+.user-card strong {
+  display: inline;
+  margin-right: 5px; /* Espaço entre nome e e-mail */
+}
+
+.user-card span {
+  display: inline;
+}
+
+
+/* Agrupar os botões Editar e Excluir em duas colunas */
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+button.edit,
+button.delete {
+  flex: 1;
+}
+
+/* Botão Excluir */
+button.delete {
+  background-color: #f44336;
+}
+
+button.delete:hover {
+  background-color: #e53935;
+}
