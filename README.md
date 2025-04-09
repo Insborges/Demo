@@ -8,7 +8,7 @@ A API permite que gerir utilizadores, com funcionalidades como:
 
 - **GET /api/users**: Encontra todos os utilizadores.
 - **POST /api/users**: Adiciona um novo utilizador.
-- **PUT /api/users/{id}**: Edita um utilizador existente.
+- **PATCH /api/users/{id}**: Edita um campo utilizador existente.
 - **DELETE /api/users/{id}**: Deleta um utilizador.
 
 ---
