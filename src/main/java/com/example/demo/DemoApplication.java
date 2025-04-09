@@ -35,13 +35,6 @@ public class DemoApplication {
 				return;
 			}
 
-			//Guarda um novo utilizador
-			User novoUser = new User("Inês Santos", "ines@example.com");
-			userRepository.save(novoUser);
-
-			User segundoUser = new User("Igor Dias", "digor8006@gmail.com");
-			userRepository.save(segundoUser);
-
 			// Listar todos os utilizadores
 			System.out.println("Utilizadores na base de dados:");
 			userRepository.findAll().forEach(user ->
@@ -55,7 +48,7 @@ public class DemoApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/**").allowedOrigins("http://localhost:3000").allowedMethods("GET", "POST", "PUT", "DELETE");
+				registry.addMapping("/api/**").allowedOrigins("http://localhost:3000").allowedMethods("GET", "POST"/*, "PUT"*/, "DELETE", "PATCH");
 			}
 		};
 	}

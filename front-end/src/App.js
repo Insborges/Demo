@@ -47,7 +47,7 @@ function App() {
 
   const saveUser = (user) => {
     fetch(`http://localhost:8080/api/users/${user.id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },

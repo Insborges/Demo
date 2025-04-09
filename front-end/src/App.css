@@ -1,3 +1,6 @@
+.container {
+  margin: 20px;
+}
 /* Estiliza os itens da lista */
 ul {
   list-style-type: none;
@@ -57,7 +60,6 @@ button:hover {
 .user-card span {
   display: inline;
 }
-
 
 /* Agrupar os botões Editar e Excluir em duas colunas */
 .buttons-container {
